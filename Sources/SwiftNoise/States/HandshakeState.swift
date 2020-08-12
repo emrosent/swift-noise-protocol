@@ -77,6 +77,15 @@ let patterns: [HandshakePattern: HandshakePatternDetails] = [
       [ .e, .ee, .se ]
     ]
   ),
+  .XX: HandshakePatternDetails(
+    initiatorPremessages: [],
+    responderPremessages: [],
+    messagePatterns: [
+      [ .e ],
+      [ .e, .ee, .s, .es],
+      [ .s, .se ]
+    ]
+  )
 ]
 
 func getStaticKey(s: KeyPair?, rs: PublicKey?, own: Bool) throws -> PublicKey {
