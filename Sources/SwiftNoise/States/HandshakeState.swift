@@ -21,6 +21,7 @@ public enum HandshakePattern: String {
   case IK
   case KK
   case KN
+  case XX
 }
 
 public enum Token {
